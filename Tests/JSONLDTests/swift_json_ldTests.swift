@@ -1,5 +1,5 @@
 import XCTest
-@testable import swift_json_ld
+@testable import JSONLD
 
 final class swift_json_ldTests: XCTestCase {
     func testExample() throws {

@@ -8,16 +8,20 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "JSON-LD",
-            targets: ["JSON-LD"]),
+            name: "JSONLD",
+            targets: ["JSONLD"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/sinoru/swift-json-value.git", from: "0.0.1")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "JSON-LD"),
+            name: "JSONLD",
+            dependencies: [.product(name: "JSONValue", package: "swift-json-value")]),
         .testTarget(
-            name: "JSON-LDTests",
-            dependencies: ["JSON-LD"]),
+            name: "JSONLDTests",
+            dependencies: ["JSONLD"]),
     ]
 )
