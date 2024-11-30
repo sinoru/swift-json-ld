@@ -1,14 +1,24 @@
 {
+  "originHash" : "ee7744393c2f6fb4ee9464179f00ea4cd600579d7ff93b39a7e9704f4d7052b8",
   "pins" : [
     {
-      "identity" : "swift-json-value",
+      "identity" : "swift-json",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/sinoru/swift-json-value.git",
+      "location" : "https://github.com/sinoru/swift-json.git",
       "state" : {
-        "revision" : "297c8d971df73cd6d5790ed9ad0e22f03c6383a5",
-        "version" : "0.0.1"
+        "revision" : "242bbd767c12a216e461f578de5876010e10f4b9",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax",
+      "state" : {
+        "revision" : "0687f71944021d616d34d922343dcef086855920",
+        "version" : "600.0.1"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
