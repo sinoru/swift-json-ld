@@ -8,6 +8,7 @@ let package = Package(
     name: "swift-json-ld",
     platforms: [
         .macOS(.v10_15),
+        .iOS(.v13),
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
